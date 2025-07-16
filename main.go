@@ -52,6 +52,7 @@ func main() {
     fmt.Println("👤 Admin ID :", config.Admin)
     fmt.Println("✅ Ready to run the bot!")
 
+    // Run the python bot script
     cmd := exec.Command("python3", "bot.py")
     cmd.Stdout = os.Stdout
     cmd.Stderr = os.Stderr
